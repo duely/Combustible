@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "PPP",
+    "L L",
+    "LLL"  ],
+  "key": {
+    "L": [
+      {
+        "type": "forge:ore_dict",
+        "ore": "logWood"
+      }
+    ],
+    "P": [
+      {
+        "type": "forge:ore_dict",
+        "ore": "plankWood"
+      }
+    ]
+  },
+  "result": {
+    "item": "combustible:wooden_furnace",
+    "data": 0
+  }
+}
