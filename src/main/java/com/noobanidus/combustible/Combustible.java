@@ -39,8 +39,8 @@ public class Combustible {
   @Mod.Instance(MODID)
   public static Combustible instance;
 
-  public static Block furnace = new BlockWoodenFurnace(false).setRegistryName(MODID, "wooden_furnace").setCreativeTab(TAB).setTranslationKey("wooden_furnace");
-  public static Block furnace_lit = new BlockWoodenFurnace(true).setRegistryName("wooden_furnace_lit").setTranslationKey("wooden_furnace");
+  public static Block furnace = new BlockWoodenFurnace(false).setRegistryName(MODID, "wooden_furnace").setCreativeTab(TAB).setTranslationKey("wooden_furnace").setHardness(3.5f);
+  public static Block furnace_lit = new BlockWoodenFurnace(true).setRegistryName("wooden_furnace_lit").setTranslationKey("wooden_furnace").setHardness(3.5f);
   public static Item furnaceItem = new ItemBlock(furnace).setRegistryName(MODID, "wooden_furnace").setCreativeTab(TAB).setTranslationKey("wooden_furnace");
 
   @Mod.EventHandler

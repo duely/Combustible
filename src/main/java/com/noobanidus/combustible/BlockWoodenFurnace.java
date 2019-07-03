@@ -73,8 +73,8 @@ public class BlockWoodenFurnace extends BlockFurnace {
     if (!BlockWoodenFurnace.keepInventory) {
       TileEntity tileentity = worldIn.getTileEntity(pos);
 
-      if (tileentity instanceof TileEntityFurnace) {
-        InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityFurnace) tileentity);
+      if (tileentity instanceof TileEntityWoodenFurnace) {
+        InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityWoodenFurnace) tileentity);
         worldIn.updateComparatorOutputLevel(pos, this);
       }
 
