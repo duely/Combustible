@@ -1,0 +1,21 @@
+[
+  {
+    "modid": "combustible",
+    "name": "Combustible",
+    "description": "Combustible configurable wooden furnaces!",
+    "version": "${version}",
+    "credits": "Noobanidus",
+    "logoFile": "assets/combustible/textures/logo.png",
+    "mcversion": "${mc_version}",
+    "url": "http://github.com/duely/combustible",
+    "updateUrl": "",
+    "authorList": [
+      "Noobanidus"
+    ],
+    "parent": "",
+    "screenshots": [],
+    "dependencies": [
+      "forge"
+    ]
+  }
+]

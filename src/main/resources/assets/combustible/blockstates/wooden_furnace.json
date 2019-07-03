@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "combustible:wooden_furnace" },
+        "facing=south": { "model": "combustible:wooden_furnace", "y": 180 },
+        "facing=west":  { "model": "combustible:wooden_furnace", "y": 270 },
+        "facing=east":  { "model": "combustible:wooden_furnace", "y": 90 }
+    }
+}
