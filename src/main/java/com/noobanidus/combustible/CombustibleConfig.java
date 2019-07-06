@@ -38,9 +38,9 @@ public class CombustibleConfig {
   @Config.Name("Is flammable")
   public static boolean isFlammable = true;
 
-  @Config.Comment("The flammability of the furance (i.e., how quickly it will burn and be destroyed; requires Is Flammable to be true) [default 7]")
+  @Config.Comment("The flammability of the furance (i.e., how quickly it will burn and be destroyed; requires Is Flammable to be true) [default 5]")
   @Config.Name("Flammability")
-  public static int flammability = 7;
+  public static int flammability = 5;
 
   @Config.Comment("The \"encouragement\" of this block, (i.e., the speed of fire spreading) [default 5]")
   @Config.Name("Encouragement")
