@@ -1,23 +1,22 @@
 package com.noobanidus.combustible;
 
-import net.minecraft.block.BlockFurnace;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.inventory.InventoryHelper;
+import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockWoodenFurnace extends BlockFurnace {
-  private final boolean isBurning;
+import java.util.Random;
+
+public class BlockWoodenFurnace extends FurnaceBase {
   protected static boolean keepInventory = true;
 
   protected BlockWoodenFurnace(boolean isBurning) {
     super(isBurning);
-    this.isBurning = isBurning;
     setSoundType(SoundType.WOOD);
   }
 
@@ -42,7 +41,13 @@ public class BlockWoodenFurnace extends BlockFurnace {
     return super.getFireSpreadSpeed(world, pos, face);
   }
 
-  @Override
+    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        return Combustible.furnaceItem;
+    }
+
+
+    @Override
   public TileEntity createNewTileEntity(World worldIn, int meta) {
     return new TileEntityWoodenFurnace();
   }
@@ -81,4 +86,5 @@ public class BlockWoodenFurnace extends BlockFurnace {
       worldIn.removeTileEntity(pos);
     }
   }
+
 }
